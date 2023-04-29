@@ -1,7 +1,7 @@
 export default function Tweet({ tweet, setTweet }) {
   const { _id, postedAt, body, user: twitterUser } = tweet;
   return (
-    <div className="flex flex-row p-4 border-2">
+    <div className="flex flex-row p-4 border-2 rounded-xl m-4">
       <div className="p-4 w-1/4">
         <img
           className="w-[50px] rounded-xl"
@@ -15,9 +15,6 @@ export default function Tweet({ tweet, setTweet }) {
         <p>{tweet.body}</p>
       </div>
       <div className="">
-        <p>{tweet.likes.length}</p>
-        <p>{tweet.likes.length}</p>
-        <p>{tweet.likes.length}</p>
         <p>{tweet.likes.length}</p>
       </div>
     </div>
